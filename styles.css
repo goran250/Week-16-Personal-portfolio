@@ -23,13 +23,13 @@ header p {
 }
 
 .logotype {
-  width: 300px;
+  width: 350px;
   float: left;
-  margin: 20px 0 30px 30px;
+  margin: 25px 0 30px 50px;
 }
 
 nav {
-   background-color: #333;
+   background-color: #585699;
    padding: 1rem 0;
    text-align: center;
    position: sticky;
