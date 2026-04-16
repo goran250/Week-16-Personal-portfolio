@@ -8,7 +8,7 @@ body {
 header {
    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
    color: white;
-   padding: 2rem 0;
+   padding: 2rem 0 1rem;
    text-align: center;
 }
 
@@ -22,10 +22,14 @@ header p {
    opacity: 0.9;
 }
 
-.inner-header{ 
+.inner-header, .inner-footer { 
    max-width: 1300px;
    margin: 0 auto;
+}
 
+.header-object {
+   width: 100%; 
+   height: 290px;
 }
 
 .logotype {
@@ -34,12 +38,16 @@ header p {
   margin: 0 0 30px 50px;
 }
 
+footer .logotype {
+   margin: -16px 0 0 50px;
+}
+
 nav {
    background-color: #585699;
    padding: 1rem 0;
    text-align: center;
-   position: sticky;
-   top: 0;
+   position: relative;
+   top: 32px;
 }
 
 nav a {
@@ -53,6 +61,10 @@ nav a:hover {
    color: #667eea;
 }
 
+#toggleMobileMenu, .mobile-nav {
+   display: none;
+}
+
 .container {
    max-width: 1200px;
    margin: 0 auto;
@@ -60,21 +72,32 @@ nav a:hover {
 }
 
 .welcome-message {
-   max-width: 560px;
+   max-width: 60%;
    float: left;
    margin-right: 30px;
 }
 
 section#about {
    max-width: 950px;
-   margin: 3rem auto;
+   margin: 0 auto;
+}
+
+.left-column {
+   max-width: 60%;
+   float: left;
+   margin: 0 30px 30px 0;
 }
 
 .profile-image {
-   max-width: 300px;
+   max-width: 33%;
    height: auto;
    float: right;
-   margin: 0 30px;
+   margin: 0;
+}
+
+ .profile-image.about {
+    max-width: 33%;
+    margin: 30px 0 30px;
 }
 
 section {
@@ -95,6 +118,10 @@ section.main-content {
   margin: 0 auto;
 }
 
+section.main-content.about {
+  max-width: 1100px;
+  margin: 0 auto;
+}
 .projects {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -144,7 +171,7 @@ section.main-content {
 }
 
 .project-image-small {
-   width: 330px;
+   max-width: 100%;
    height: auto;
    margin-top: 1rem;
    border-radius: 8px;
@@ -157,12 +184,16 @@ section.main-content {
    gap: 1rem;
 }
 
-.skill-tag {
+.skill-tag, .cv-tag {
    background-color: #667eea;
    color: white;
    padding: 0.5rem 1rem;
    border-radius: 20px;
    font-size: 0.9rem;
+}
+
+.left-column a {
+   text-decoration: none;
 }
 
 footer {
@@ -180,4 +211,130 @@ footer a {
 
 footer a:hover {
    text-decoration: underline;
+}
+
+footer-text {
+   float: right
+}
+
+@media (max-width: 880px) {
+   .header-object {
+       height: 305px;
+   }
+}
+
+@media (max-width: 850px) {
+   .container {
+      padding: 2rem 2rem 0;
+   }
+
+   .welcome-message, .left-column {
+      margin-right: 0px;
+      margin-bottom: 30px;
+      max-width: 100%;
+   }
+
+   .profile-image {
+      max-width: 325px;
+      display: block;
+      float: none;
+      margin: 0 auto;
+   }
+
+   .profile-image.about {
+      max-width: 325px;
+      display: block;
+      float: none;
+      margin: 60px auto 0;
+   }
+
+   .header-text {
+       clear: both;
+   }
+
+   .logotype {
+      float: none;
+      margin: 0 auto!important;
+   }
+
+   header h1 {
+
+      margin-top: 10px;
+   }
+   header p {
+      margin: 5px 0 -10px;
+   }
+
+   .logotype {
+      width: 280px;
+   }
+
+   header h1 {
+      font-size: 2em;
+      margin-bottom: 0.5rem;                                    
+   }   
+
+   footer { 
+      padding-bottom: 0.5rem;
+   }
+}
+
+@media (max-width: 650px) {
+   #toggleMobileMenu {
+      display: block;
+      cursor: pointer;
+      background: none;
+      border: none;
+      margin-top: -20px;
+      margin-left: 40px;
+   }
+
+   .header-object {
+       height: 270px;
+   }
+
+   .desktop-nav {
+      display: none;
+   }
+
+  .mobile-nav { 
+    position: absolute;
+    top: 260px; 
+    left: 55px; 
+    width: 180px;
+    background-color: #9078de;
+     text-align: left;
+     z-index: 1000;
+  }
+  
+  /* Show when toggle is active */
+  .mobile-nav.active {
+    display: block;
+  }
+  .mobile-nav ul {
+     list-style: disc;
+     padding: 0 1rem;
+     margin: 0 0 0 20px;
+  }
+  
+  .mobile-nav ul li a {
+    margin: 0;
+  }
+  
+}
+
+@media (max-width: 450px) {
+   .mobile-nav {
+      left: 35px
+   }
+  
+   
+   #toggleMobileMenu {
+      margin-left: 20px;
+   }
+
+   .container {
+      padding: 1rem 1rem 0;
+   }
+
 }

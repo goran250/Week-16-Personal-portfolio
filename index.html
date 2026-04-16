@@ -5,11 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="styles.css" media="all">
+    <script src="javascript.js"></script>
 </head>
-<body>
-    <div>
-        <object type="text/html" data="header.html" style="width: 100%; height: 300px;"></object>
-    </div>
+<body onload="loadFooter()">
+     <header>
+        <div class="inner-header">            
+            <a href="index.html"><img src="./images/logotype.webp" alt="logotype" class="logotype"></a>
+            <div class="header-text">
+                <h1>Göran Rosenberg</h1>
+                <p>Web Developer</p>
+            </div>
+        </div>
+        <nav class="desktop-nav">
+            <a href="index.html">Start</a>
+            <a href="about.html">Om mig</a>
+            <a href="#projects">Projekt</a>
+            <a href="#skills">Kompetenser</a>
+        </nav>
+
+        <button class="menu-toggle" id="toggleMobileMenu" onclick="ToggleMobileMenu()">
+            <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" aria-hidden="true" focusable="false">
+                <rect x="6" y="6" width="60" height="6.8"></rect>
+                <rect x="6" y="28" width="60" height="6.8"></rect>
+                <rect x="6" y="50" width="60" height="6.8"></rect>
+            </svg>
+        </button>
+
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="about.html">Om mig</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Kompetenser</a></li>
+            </ul>
+        </nav>
+    </header>;
+
 
     <div class="container">
         <section id="about">
@@ -19,10 +50,9 @@
                     Längre ner kan du se vilka kompetenser jag har.
                 </p>
                 <p>
-                    <a href="about-me">Läs mer om mig!</a>
+                    <a href="about.html">Läs mer om mig!</a>
                 </p>
 
-                <br/>
                 
                 <p>Du får gärna kontakta mig på:</p>
                 <p><strong>Email:</strong> <a href="mailto:goran.rosenberg@tomelilla.nu">goran.rosenberg@tomelilla.nu</a></p>
@@ -37,12 +67,20 @@
             <div class="projects">
                 <div class="project-card">
                     <h3>Änglar & Drakar</h3>
-                    <p>Detta är det senaste projektet jag gjort. Det är en wordpress baserad webshop. </p>
+                    <p>Detta är det senaste projektet jag gjort. En wordpress baserad webshop. </p>
                     <a href="anglarodrakar.html">Visa projekt</a>
                     <br/>
                     <br/>
                     <img src="./images/anglarodrakar-logo.webp" alt="Änglar & Drakar" class="project-image-small">
                    
+                </div>
+
+                 <div class="project-card">
+                    <h3>Friska Hem Sverige</h3> 
+                    <p>Vidareutveckling av en shopify baserad webshop åt Friska Hem Sverige.</p>
+                    <a href="friskahemsverige.html">Visa projekt</a>
+                    <br/><br/><br/><br/>
+                    <img src="./images/friskahemsverige-logo.webp" alt="Friska Hem Sverige" class="project-image-small">
                 </div>
 
                 <div class="project-card">
@@ -55,7 +93,7 @@
                 <div class="project-card">
                     <h3>Bodygallerian</h3>
                     <p>En webbsida som jag utvecklade åt Sofia Ingelström och hennes företag Bodygallerian.</p>
-                    <a href="#">Visa projekt</a>
+                    <a href="bodygallerian.html">Visa projekt</a>
                     <br/>
                     <br/>
                     <img src="./images/bodygallerian-logo.jpg" class="project-image-small">
@@ -64,13 +102,13 @@
                 <div class="project-card">
                     <h3>Proprintperformance</h3>
                     <p>Ett angularJS-projekt som jag var med och utvecklade när jag jobbade för Marknadslab Interaktion.</p>
-                    <a href="#">Visa projekt</a>
+                    <a href="proprintperformance.html">Visa projekt</a>
                     <img src="./images/proprint-logo.jpg" class="project-image-small">
                 </div>
                 <div class="project-card">
                     <h3>AnolytechApp</h3>
                     <p>Ett angularJS-projekt som jag var med och utvecklade när jag jobbade för Marknadslab Interaktion.</p>
-                    <a href="#">Visa projekt</a>
+                    <a href="anolytechapp.html">Visa projekt</a>
                     <img src="./images/anolytechapp-logo.jpg" class="project-image-small">
                 </div>
 
@@ -82,8 +120,18 @@
                         Ett ASP.NET-projekt som jag utvecklade när jag jobbade för MFK Ekonomi A. Det var ett 
                         webbbaserat faktureringssystem.
                     </p>
-                    <a href="#">Visa projekt</a>
+                    <a href="webfaktura.html">Visa projekt</a>
                      <img src="./images/webfaktura-logo.webp" class="project-image-small">
+                </div>
+
+                 <div class="project-card">
+                    <h3>Webfaktura</h3>
+                    <p>
+                        Ett ASP.NET-projekt som jag utvecklade när jag jobbade för MFK Ekonomi A. Det var ett 
+                        webbbaserat faktureringssystem.
+                    </p>
+                    <a href="lugi.html">Visa projekt</a>
+                     <img src="./images/lugi-logo.webp" class="project-image-small">
                 </div>
             </div>
         </section>
@@ -108,6 +156,7 @@
                 <span class="skill-tag">Google Ads</span>          
                 <span class="skill-tag">Email Marketing</span>          
                 <span class="skill-tag">Git</span>
+                <span class="skill-tag">Gitlab</span>
                 
             </div>
         </section>
@@ -115,9 +164,6 @@
        
     </div>
 
-    <footer>
-        <p>&copy; 2026 Göran Rosenberg. All rights reserved.</p>
-        <p><a href="#top">Back to top</a></p>
-    </footer>
+    <footer id="footer"></footer>
 </body>
 </html>

@@ -1,15 +1,43 @@
  <link rel="stylesheet" href="styles.css" media="all">
  <header>
     <div class="inner-header">            
-        <img src="./images/logotype.webp" alt="logotype" class="logotype">        
-        <h1>Göran Rosenberg</h1>
-        <p>Web Developer</p>
+        <a href="index.html"><img src="./images/logotype.webp" alt="logotype" class="logotype"></a>
+        <div class="header-text">
+            <h1>Göran Rosenberg</h1>
+            <p>Web Developer</p>
+        </div>
     </div>
+    <nav class="desktop-nav">
+        <a href="index.html">Start</a>
+        <a href="about.html">Om mig</a>
+        <a href="projects.html">Projekt</a>
+        <a href="#skills">Kompetenser</a>
+     
+    </nav>
+
+    <button class="menu-toggle" id="toggleMobileMenu">
+        <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" aria-hidden="true" focusable="false">
+            <rect x="6" y="6" width="60" height="6.8"></rect>
+            <rect x="6" y="28" width="60" height="6.8"></rect>
+            <rect x="6" y="50" width="60" height="6.8"></rect>
+        </svg>
+    </button>
+
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="about.html">Om mig</a></li>
+            <li><a href="projects.html">Projekt</a></li>
+            <li><a href="#skills">Kompetenser</a></li>
+        </ul>
+    </nav>
 </header>
 
-<nav>
-    <a href="about.html">Om mig</a>
-    <a href="projects.html">Projekt</a>
-    <a href="#skills">Kompetenser</a>
-    <a href="#contact">Kontakt</a>
-</nav>
+<script>
+    const menuToggle = document.getElementById('toggleMobileMenu');
+    const navLinks = document.querySelector('.mobile-nav');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
