@@ -8,73 +8,126 @@
 </head>
 <body>
     <header>
-        <img src="./images/logotype.webp" alt="logotype" class="logotype">
-        <h1>Göran Rosenberg</h1>
-        <p>Web Developer</p>
-
+        <div class="inner-header">            
+            <img src="./images/logotype.webp" alt="logotype" class="logotype">        
+            <h1>Göran Rosenberg</h1>
+            <p>Web Developer</p>
+        </div>
     </header>
 
     <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <a href="about.html">Om mig</a>
+        <a href="projects.html">Projekt</a>
+        <a href="#skills">Kompetenser</a>
+        <a href="#contact">Kontakt</a>
     </nav>
 
     <div class="container">
         <section id="about">
-            <h2>Om mig</h2>
-            <p>Välkommen till My portfolio! Här presenterar jag ett axplock av vad jag gjort under min karriär som webbutvecklare.</p>
+            <div class="welcome-message">
+                <p>
+                    Välkommen till My portfolio! Här presenterar jag ett axplock av vad jag gjort under min karriär som webbutvecklare.
+                    Längre ner kan du se vilka kompetenser jag har.
+                </p>
+                <p>
+                    <a href="about-me">Läs mer om mig!</a>
+                </p>
+
+                <br/>
+                
+                <p>Du får gärna kontakta mig på:</p>
+                <p><strong>Email:</strong> <a href="mailto:goran.rosenberg@tomelilla.nu">goran.rosenberg@tomelilla.nu</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/g%C3%B6ran-rosenberg-2731381b/" target="_blank">Linkedin profile</a></p>
+            </div>
+        
+            <img src="./images/goran-2025.webp" alt="Göran Rosenberg" class="profile-image"/>
         </section>
 
-        <section id="Projekt">
-            <h2>Projects</h2>
+        <section id="projects">
+            <h2>Projekt</h2>
             <div class="projects">
                 <div class="project-card">
-                    <h3>Änglar & Draker</h3>
+                    <h3>Änglar & Drakar</h3>
                     <p>Detta är det senaste projektet jag gjort. Det är en wordpress baserad webshop. </p>
-                    <a href="#" target="_blank">View Project →</a>
+                    <a href="anglarodrakar.html">Visa projekt</a>
+                    <br/>
+                    <br/>
+                    <img src="./images/anglarodrakar-logo.webp" alt="Änglar & Drakar" class="project-image-small">
+                   
                 </div>
 
                 <div class="project-card">
-                    <h3>Project 2</h3>
-                    <p>Description of your second project. Highlight the key features and impact.</p>
-                    <a href="#" target="_blank">View Project →</a>
+                    <h3>Sattwa Herbs</h3> 
+                    <p>Sattwa Herbs drivs av Ayurveda specialisten Sara Fryklund och hon säljer egentillverkade ayurvediska örtblandningar.</p>
+                    <a href="#">Visa projekt</a>
+                    <img src="./images/sattwaherbs-logo.webp" alt="Sattwa Herbs" class="project-image-small">
                 </div>
 
                 <div class="project-card">
-                    <h3>Project 3</h3>
-                    <p>Description of your third project. Explain the problem solved and technologies used.</p>
-                    <a href="#" target="_blank">View Project →</a>
+                    <h3>Bodygallerian</h3>
+                    <p>En webbsida som jag utvecklade åt Sofia Ingelström och hennes företag Bodygallerian.</p>
+                    <a href="#">Visa projekt</a>
+                    <br/>
+                    <br/>
+                    <img src="./images/bodygallerian-logo.jpg" class="project-image-small">
+                </div>
+
+                <div class="project-card">
+                    <h3>Proprintperformance</h3>
+                    <p>Ett angularJS-projekt som jag var med och utvecklade när jag jobbade för Marknadslab Interaktion.</p>
+                    <a href="#">Visa projekt</a>
+                    <img src="./images/proprint-logo.jpg" class="project-image-small">
+                </div>
+                <div class="project-card">
+                    <h3>AnolytechApp</h3>
+                    <p>Ett angularJS-projekt som jag var med och utvecklade när jag jobbade för Marknadslab Interaktion.</p>
+                    <a href="#">Visa projekt</a>
+                    <img src="./images/anolytechapp-logo.jpg" class="project-image-small">
+                </div>
+
+                
+
+                <div class="project-card">
+                    <h3>Webfaktura</h3>
+                    <p>
+                        Ett ASP.NET-projekt som jag utvecklade när jag jobbade för MFK Ekonomi A. Det var ett 
+                        webbbaserat faktureringssystem.
+                    </p>
+                    <a href="#">Visa projekt</a>
+                     <img src="./images/webfaktura-logo.webp" class="project-image-small">
                 </div>
             </div>
         </section>
 
         <section id="skills">
-            <h2>Skills</h2>
+            <h2>Mina kompetenser</h2>
             <div class="skills">
                 <span class="skill-tag">HTML</span>
                 <span class="skill-tag">CSS</span>
+                <span class="skill-tag">Responsive Design</span>
                 <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">JQuery</span>
                 <span class="skill-tag">React</span>
                 <span class="skill-tag">Python</span>
-                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">PHP</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">Wordpress</span>
+                <span class="skill-tag">WooCommerce</span>
+                <span class="skill-tag">C#.Net</span>
+                <span class="skill-tag">Sql Server</span>
+                <span class="skill-tag">Facebook Ads</span>  
+                <span class="skill-tag">Google Ads</span>          
+                <span class="skill-tag">Email Marketing</span>          
                 <span class="skill-tag">Git</span>
-                <span class="skill-tag">Responsive Design</span>
+                
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me at:</p>
-            <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com" target="_blank">linkedin.com/in/yourprofile</a></p>
-            <p><strong>GitHub:</strong> <a href="https://github.com" target="_blank">github.com/yourprofile</a></p>
-        </section>
+       
     </div>
 
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2026 Göran Rosenberg. All rights reserved.</p>
         <p><a href="#top">Back to top</a></p>
     </footer>
 </body>
