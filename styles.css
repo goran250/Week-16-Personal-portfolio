@@ -5,6 +5,10 @@ body {
    color: #333;
 }
 
+.displayNone {
+   display: none;
+}
+
 header {
    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
    color: white;
@@ -63,6 +67,10 @@ nav a:hover {
 
 #toggleMobileMenu, .mobile-nav {
    display: none;
+}
+
+#toggleMobileMenu {
+   padding: 30px 10px 0;
 }
 
 .container {
@@ -280,6 +288,14 @@ footer-text {
 }
 
 @media (max-width: 650px) {
+   .header-object {
+       height: 270px;
+   }
+
+   .desktop-nav {
+      display: none;
+   }
+
    #toggleMobileMenu {
       display: block;
       cursor: pointer;
@@ -289,17 +305,9 @@ footer-text {
       margin-left: 40px;
    }
 
-   .header-object {
-       height: 270px;
-   }
-
-   .desktop-nav {
-      display: none;
-   }
-
   .mobile-nav { 
     position: absolute;
-    top: 260px; 
+    top: 290px; 
     left: 55px; 
     width: 180px;
     background-color: #9078de;

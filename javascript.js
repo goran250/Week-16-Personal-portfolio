@@ -1,5 +1,3 @@
-
-
 function ToggleMobileMenu() {
     const mobileNav = document.querySelector('.mobile-nav');
     mobileNav.classList.toggle('active');
@@ -13,7 +11,7 @@ function loadHeaderAndFooter() {
 function loadHeader() {
     document.getElementById('header-box').innerHTML = `
         <header>
-            <div class="inner-header">
+            <div class="inner-header">            
                 <a href="index.html"><img src="./images/logotype.webp" alt="logotype" class="logotype"></a>
                 <div class="header-text">
                     <h1>Göran Rosenberg</h1>
@@ -47,8 +45,8 @@ function loadHeader() {
 }
 
 
-function loadFooter() {
-    document.getElementById('footer').innerHTML =
+function loadFooter() {        
+    document.getElementById('footer').innerHTML = 
         `<div class="inner-footer">
             <a href="index.html"><img src="./images/logotype.webp" alt="logotype" class="logotype"></a>
             <div class="footer-text">
