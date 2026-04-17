@@ -13,7 +13,7 @@ function loadHeaderAndFooter() {
 function loadHeader() {
     document.getElementById('header-box').innerHTML = `
         <header>
-            <div class="inner-header">            
+            <div class="inner-header">
                 <a href="index.html"><img src="./images/logotype.webp" alt="logotype" class="logotype"></a>
                 <div class="header-text">
                     <h1>Göran Rosenberg</h1>
@@ -23,7 +23,7 @@ function loadHeader() {
             <nav class="desktop-nav">
                 <a href="index.html">Start</a>
                 <a href="about.html">Om mig</a>
-                <a href="index.html#iprojects">Projekt</a>
+                <a href="index.html#projects">Projekt</a>
                 <a href="index.html#skills">Kompetenser</a>
             </nav>
 
@@ -47,8 +47,8 @@ function loadHeader() {
 }
 
 
-function loadFooter() {        
-    document.getElementById('footer').innerHTML = 
+function loadFooter() {
+    document.getElementById('footer').innerHTML =
         `<div class="inner-footer">
             <a href="index.html"><img src="./images/logotype.webp" alt="logotype" class="logotype"></a>
             <div class="footer-text">
