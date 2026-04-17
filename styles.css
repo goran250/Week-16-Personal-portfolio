@@ -67,10 +67,11 @@ nav a:hover {
 
 #toggleMobileMenu, .mobile-nav {
    display: none;
+   position: relative;
 }
 
 #toggleMobileMenu {
-   padding: 30px 10px 0;
+   padding: 10px 10px 0;
 }
 
 .container {
@@ -301,14 +302,15 @@ footer-text {
       cursor: pointer;
       background: none;
       border: none;
-      margin-top: -20px;
+      margin-top: -40px;
       margin-left: 40px;
+      z-index: 100;
    }
 
   .mobile-nav { 
     position: absolute;
-    top: 290px; 
-    left: 55px; 
+    top: 245px; 
+    left: 60px; 
     width: 180px;
     background-color: #9078de;
      text-align: left;
