@@ -192,6 +192,9 @@ section.main-content.about {
    font-size: 0.9rem;
 }
 
+.cv-tag {
+   margin-left: 10px;
+}
 .left-column a {
    text-decoration: none;
 }

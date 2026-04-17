@@ -23,7 +23,7 @@ function loadHeader() {
             <nav class="desktop-nav">
                 <a href="index.html">Start</a>
                 <a href="about.html">Om mig</a>
-                <a href="index.html#projects">Projekt</a>
+                <a href="index.html#iprojects">Projekt</a>
                 <a href="index.html#skills">Kompetenser</a>
             </nav>
 
@@ -39,8 +39,8 @@ function loadHeader() {
                 <ul>
                     <li><a href="index.html">Start</a></li>
                     <li><a href="about.html">Om mig</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Kompetenser</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#skills">Kompetenser</a></li>
                 </ul>
             </nav>
         </header>`;
